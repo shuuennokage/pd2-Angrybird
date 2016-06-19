@@ -78,7 +78,8 @@ void MainWindow::showEvent(QShowEvent *)
     // Timer
     connect(restartB,SIGNAL(clicked(bool)),this,SLOT(restart()));
     connect(&timer,SIGNAL(timeout()),this,SLOT(tick()));
-    connect(this,SIGNAL(quitGame()),this,SLOT(QUITSLOT()));
+    //connect(this,SIGNAL(quitGame()),this,SLOT(QUITSLOT()));
+    connect(end,SIGNAL(clicked(bool)),this,SLOT(quitGame()));
     timer.start(100/6);
 
 }
