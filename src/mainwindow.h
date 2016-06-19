@@ -51,6 +51,7 @@ private:
     float x3;
     float y;
     QPushButton *restartB;
+    QPushButton *end;
     int count = 0;
     int g;
     int press = 0;
