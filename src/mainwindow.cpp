@@ -33,7 +33,10 @@ void MainWindow::showEvent(QShowEvent *)
     restartB = new QPushButton;
     restartB->setIcon(QPixmap(":/image/re.png"));
     restartB->setGeometry(30,30,40,40);
-    scene->addWidget(restartB);
+    end = new QPushButton;
+    end->setIcon(QPixmap(":/image/end.png"));
+    end->setGeometry(60,60,60,40);
+    scene->addWidget(end);
     // Create world
     world = new b2World(b2Vec2(0.0f, -9.8f));
     // Setting Size
